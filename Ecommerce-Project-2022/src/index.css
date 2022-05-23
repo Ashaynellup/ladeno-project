@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .mantine-Badge-filled {
+    @apply bg-white;
+  }
+
+  .cart-btn {
+    @apply grid w-6 h-6 duration-150 rounded-full outline-2 outline-[#3d43a8] outline text-[#3d43a8] focus:outline-2 focus:outline-[#3d43a8] focus:border-none
+     shadow-sm active:scale-95 place-items-center shadow-black/30;
+  }
+
+  .mantine-Modal-body {
+    @apply space-y-8;
+  }
+
+  .mantine-Menu-itemHovered {
+    @apply bg-gray-100;
+  }
+
+  .innerSlide {
+    @apply flex items-center justify-center w-screen;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+*::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c3bfbf;
+  border-radius: 99px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
